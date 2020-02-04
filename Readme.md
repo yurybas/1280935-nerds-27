@@ -1,8 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юрий Горностаев](https://up.htmlacademy.ru/htmlcss/27/user/1280935).
-* Наставник: [Дмитрий Гуляев]
-(https://htmlacademy.ru/profile/id87930).
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/id87930).
 
 ---
 
