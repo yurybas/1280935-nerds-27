@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header>
@@ -16,13 +17,31 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
+        <a href="#">Корзина</a>
+        </nav>
     </header>
     <main>
-      <h1>Дизайн-студия "Nerds"</h1>
+      <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
+      <section  class="promo">
+        <div class="slider">
+          <span>Долго, дорого, скрупулезно.</span>
+          <p>Математически выверенный дизайн<br>
+            для вашего сайта или приложения</p>
+          <a class="button" href="">Узнать больше</a>
+        </div>
+        <div class="slider">
+          <span>Любим математику как никто другой</span>
+          <p>Никакого креатива, только математические формулы<br>
+            для расчета идеальных пропорций</p>
+          <a class="button" href="">Узнать больше</a>
+        </div>
+        <div class="slider">
+          <span>Только ночь, только хардкор</span>
+          <p>Работать днём как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается</p>
+          <a class="button" href="">Узнать больше</a>
+        </div>
+      </section>
       <section>
         <h2>Преимущества</h2>
         <ul>
@@ -40,8 +59,49 @@
           </li>
         </ul>
       </section>
+      <section class="description">
+        <h2>Описание</h2>
+        <div class="description_slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара</div>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+           превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <span class="description_list-title">Выполняем заказы на разработку:</span>
+          <ul class="description_list">
+             <li>Веб-сайтов любой сложности</li>
+             <li>Мобильных приложений для iOS и Android</li>
+             <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        <div class="description_features">
+          <img src="img/    " alt="Логотип студии Нёрдс">
+          <span class="description_features_list-title">C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</span>
+          <table>
+            <tr>
+              <th>146%</th>
+              <th>100%</th>
+              <th>50%</th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+        <div class="link">
+           <a href=""> <img src="" alt="Логотип html academy"></a>
+           <a href=""> <img src="" alt="логотип барбершопа бородинский"></a>
+           <a href=""> <img src="" alt="логотип лендинга pink"></a>
+           <a href=""> <img src="" alt="логотип магазина вязаных изделий"></a>
+          </div>
     </main>
     <footer>
+      <div class="footer_info">
+        <span>NЁRDS DESIGN STUDIO</span>
+        <p>191186, Санкт-Петербург, <br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7(812) 275-75-75</p>
+        <button>Напишите нам</button>
+      </div>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">ВКонтакте</a></li>
@@ -49,8 +109,8 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-        <p class="slogan">Давайте дружить, это выгодно!</p>
-        <p class="bonus">Скидка 10% для друзей из социальных сетей</p>
+        <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
+        <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
           </footer>
     <section>
       <h2>Напишите нам</h2>
