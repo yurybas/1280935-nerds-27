@@ -47,7 +47,7 @@
         </div>
       </section>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li>
             <img src="img/advantage-picture-red.jpg">
@@ -70,7 +70,7 @@
         </ul>
       </section>
       <section class="description">
-        <h2>Описание</h2>
+        <h2 class="visually-hidden">Описание</h2>
         <div class="description_slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара</div>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
            превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -126,8 +126,21 @@
         <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
           </footer>
     <section>
-      <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
+      <h2 class="visually-hidden">Напишите нам</h2>
+        <form action="" method="post">
+          <p>Напишите нам</p>
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="text" name="e-mail" placeholder="email@example.com">
+          </label>
+            <p>Текст письма:</p>
+            <textarea name="text" rows="4"></textarea>
+            <input type="submit" value="Отправить">
+        </form>
     </section>
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Nerds</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -24,7 +25,35 @@
      <h1 class="page-title">Магазин готовых шаблонов</h1>
      <section class="filters">
        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-       <!--Здесь будет форма-->
+       <form action="" method="post">
+         <p>Сетка:</p>
+         <label>
+           <input type="radio" name="grid" value="adaptive" checked> Адаптивная
+         </label>
+         <label>
+           <input type="radio" name="grid" value="fixed"> Фиксированная
+         </label>
+         <label>
+           <input type="radio" name="grid" value="rubber"> Резиновая
+         </label>
+         <p>Особенности:</p>
+         <label>
+          <input type="checkbox" name="slider" checked> Слайдер
+        </label>
+        <label>
+          <input type="checkbox" name="block"> Блок преимуществ
+        </label>
+        <label>
+          <input type="checkbox" name="news" checked> Новости
+        </label>
+        <label>
+          <input type="checkbox" name="gallery"> Галерея
+        </label>
+        <label>
+          <input type="checkbox" name="basket"> Корзина
+        </label>
+        <input type="submit" value="Показать">
+       </form>
      </section>
      <section class="catalog">
        <h2 class="visually-hidden">Список шаблонов</h2>
@@ -123,8 +152,21 @@
             <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
               </footer>
       <section>
-        <h2>Напишите нам</h2>
-        <!--Здесь будет форма-->
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form action="" method="post">
+          <p>Напишите нам</p>
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:>
+            <input type="text" name="e-mail" placeholder="email@example.com">
+          </label>
+            <p>Текст письма:</p>
+            <textarea name="text" rows="4"></textarea>
+            <input type="submit" value="Отправить">
+        </form>
       </section>
     </body>
   </html>
