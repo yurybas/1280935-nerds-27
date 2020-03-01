@@ -5,3 +5,20 @@
     height: 1px;
     margin: -1px;
   }
+  body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .main-navigation {
+    
+  }
