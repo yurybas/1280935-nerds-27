@@ -1,4 +1,4 @@
-.visually-hidden {
+  .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -8,17 +8,87 @@
   body {
     margin: 0;
     padding: 0;
-
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #ffffff;
+    color: #283136;
   }
-
+   .button {
+    font-weight: 500;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #e74246;
+  }
+  .button:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  header, .slider {
+    background-color: #eeeeee;
+  }
   a {
     text-decoration: none;
   }
   .main-navigation {
-    
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
   }
+  .site-navigation {
+    list-style: none;
+  }
+  .site-navigation a, .basket {
+    color: #000000;
+  }
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .basket:hover,
+  .basket:focus {
+    color: #fb565a;
+  }
+  .benefits ul {
+    list-style : none;
+  }
+  .benefits h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+   }
+  
+  .benefits button {
+    width: 160px;
+    height: 50px;
+  }
+  .benefits .button-green {
+   background-color: #00ca74;
+  }
+  .benefits .button-yellow {
+   background-color: #efc84a;
+  }
+  .button-green:hover,
+  .button-green:focus {
+    background-color: #00bc6c;
+  }
+  .button-yellow:hover,
+  .button-yellow:focus {
+    background-color: #eab534;
+  }
+  .button-green:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #00aa62;
+  }
+  .button-yellow:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #e5a722;
+  }
+

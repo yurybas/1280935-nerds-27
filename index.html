@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-<header>
+<header class="main-header">
       <nav class="main-navigation">
-        <a>
+        <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="news.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <img src="img/cart-icon.svg">
-        <a href="#">Корзина</a>
+        <a class="basket" href="#">Корзина</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
       <section  class="promo">
         <div class="slider">
@@ -48,26 +48,26 @@
           <img src="img/slide-picture3.jpg" width="759" height="411">
         </div>
       </section>
-      <section>
+      <section class="benefits">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li>
             <img src="img/advantage-picture-red.jpg">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button>Заказать</button>
+            <button class="button" type="button">Заказать</button>
           </li>
           <li>
             <img src="img/advantage-picture-green.jpg">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button>Заказать</button>
+            <button class="button button-green" type="button">Заказать</button>
           </li>
           <li>
             <img src="img/advantage-picture-yellow.jpg">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете насколько вы изумительны!</p>
-            <button>Заказать</button>
+            <button class="button button-yellow" type="button">Заказать</button>
           </li>
         </ul>
       </section>
@@ -76,15 +76,14 @@
         <div class="description_slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара</div>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
            превыше креатива. Работаем не покладая рук, как роботы.</p>
-           <img src="img/nerds-picture.jpg" width="360" height="208">
-          <span class="description_list-title">Выполняем заказы на разработку:</span>
+           <img src="img/nerds-picture.jpg" width="360" height="208"  alt="Логотип студии Нёрдс">
+          <p class="description_list-title">Выполняем заказы на разработку:</p>
           <ul class="description_list">
              <li>Веб-сайтов любой сложности</li>
              <li>Мобильных приложений для iOS и Android</li>
              <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         <div class="description_features">
-          <img src="img/    " alt="Логотип студии Нёрдс">
           <span class="description_features_list-title">С 2004 года любим точночть во всем:</span>
           <table>
             <tr>
@@ -108,28 +107,30 @@
           </div>
     </main>
     <footer>
+      <p>
       <img src="img/2.jpg" width="1440" height="416" alt="карта">
+      </p>
+      <div>
       <img src="img/map-marker.svg" width="231" height="190">
+    </div>
       <div class="footer_info">
         <span>NЁRDS DESIGN STUDIO</span>
         <p>191186, Санкт-Петербург, <br>
         ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+7(812)2757575">тел. +7(812) 275-75-75</a>
-        <button>Напишите нам</button>
+        <button class="button" type="button">Напишите нам</button>
       </div>
-      <div class="footer-social">
-        <ul>
+        <ul class="footer-social">
           <li><a class="social-button" href="#"> <img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
           <li><a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
           <li><a class="social-button" href="#"> <img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
         </ul>
-      </div>
         <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
         <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
           </footer>
-    <section>
+    <section class="modal">
       <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>Напишите нам</p>
           <label>
             Ваше имя:
@@ -141,8 +142,9 @@
           </label>
             <p>Текст письма:</p>
             <textarea name="text" rows="4"></textarea>
-            <input type="submit" value="Отправить">
+            <input class="button" type="submit" value="Отправить">
         </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

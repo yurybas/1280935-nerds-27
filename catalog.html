@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a  href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a  class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="news.html">Клиенты</a></li>
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <img src="img/cart-icon.svg">
-        <a href="#">Корзина</a>
+        <a class="basket" href="#">Корзина</a>
       </nav>
     </header>
    <main class="container">
@@ -145,10 +145,14 @@
          <li class="pagination-item"><a href="#">следующая</a></li>
        </ul>
      </section>
-        </main>
+   </main>
         <footer>
+          <p>
           <img src="img/2.jpg" width="1440" height="416" alt="карта">
+          </p>
+          <div>
           <img src="img/map-marker.svg" width="231" height="190">
+          </div>
           <div class="footer_info">
             <span>NЁRDS DESIGN STUDIO</span>
             <p>191186, Санкт-Петербург, <br>
@@ -156,17 +160,17 @@
             <a href="tel:+7(812)2757575">тел. +7(812) 275-75-75</a>
             <button type="button">Напишите нам</button>
           </div>
-                      <ul class="footer-social">
-              <li><a class="social-button" href="#"> <img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
-          <li><a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-          <li><a class="social-button" href="#"> <img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
-            </ul>
-            <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
-            <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
-              </footer>
-      <section>
+          <ul class="footer-social">
+            <li><a class="social-button" href="#"> <img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
+            <li><a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
+            <li><a class="social-button" href="#"> <img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+          </ul>
+          <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
+          <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
+        </footer>
+      <section class="modal">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>Напишите нам</p>
           <label>
             Ваше имя:
@@ -180,6 +184,7 @@
             <textarea name="text" rows="4"></textarea>
             <input type="submit" value="Отправить">
         </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </body>
   </html>
