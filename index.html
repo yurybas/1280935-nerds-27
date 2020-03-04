@@ -84,12 +84,12 @@
              <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         <div class="description_features">
-          <span class="description_features_list-title">С 2004 года любим точночть во всем:</span>
+          <span class="description_list-title">С 2004 года любим точноcть во всем:</span>
           <table>
             <tr>
-              <th>146%</th>
-              <th>100%</th>
-              <th>50%</th>
+              <th class="percent">146%</th>
+              <th class="percent">100%</th>
+              <th class="percent">50%</th>
             </tr>
             <tr>
               <td>Уровень самоотдачи</td>
@@ -121,17 +121,22 @@
         <button class="button" type="button">Напишите нам</button>
       </div>
         <ul class="footer-social">
-          <li><a class="social-button" href="#"> <img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
-          <li><a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-          <li><a class="social-button" href="#"> <img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+      <div class="social-button">
+          <li><a  href="#"> <img src="img/vk-icon.svg" width="26" height="15" alt="ВКонтакте"></a></li>
+      </div>
+      <div class="social-button"></div>
+          <li><a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук"></a></li>
+      </div>
+      <div class="social-button"></div>
+          <li><a href="#"> <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+      </div>
         </ul>
         <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
         <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
           </footer>
     <section class="modal">
-      <h2 class="visually-hidden">Напишите нам</h2>
+      <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <p>Напишите нам</p>
           <label>
             Ваше имя:
             <input type="text" name="name" placeholder="Имя Фамилия">
@@ -140,7 +145,7 @@
             Ваш e-mail:
             <input type="text" name="e-mail" placeholder="email@example.com">
           </label>
-            <p>Текст письма:</p>
+            <span>Текст письма:</span>
             <textarea name="text" rows="4"></textarea>
             <input class="button" type="submit" value="Отправить">
         </form>
