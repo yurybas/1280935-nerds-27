@@ -154,7 +154,11 @@
     line-height: 45px;
     color: #000000;
   }
-  .modal span,label {
+  .modal span {
+    font-weight: 700;
+    color: #000000;
+  }
+  .modal label {
     font-weight: 700;
     color: #000000;
   }
@@ -190,4 +194,17 @@ border-color: #000000 ;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
- 
+.page-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+  text-align: center;
+}
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}

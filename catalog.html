@@ -27,10 +27,18 @@
      <h1 class="page-title">Магазин готовых шаблонов</h1>
      <section class="filters">
        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-       <div>
-       <label for="cost">Стоимость:</label>
-          <input type="range" id="cost" min="0" max="15000">
-          <p>от 0 до 15000</p>
+          <p class="price">Стоимость:</p>
+       <div class="range">
+         <div class="range-track">
+           <div class="range-pin range-pin-min"></div>
+           <div class="range-pin range-pin-max"></div>
+         </div>
+         <label>от
+         <input type="number" value="0" name="min">
+        </label>
+        <label>до 
+         <input type="number" value="15000" name="max">
+        </label>
        </div>
        <div>
           <p>Сортировать:</p>
@@ -146,45 +154,50 @@
        </ul>
      </section>
    </main>
-        <footer>
-          <p>
-          <img src="img/2.jpg" width="1440" height="416" alt="карта">
-          </p>
-          <div>
-          <img src="img/map-marker.svg" width="231" height="190">
-          </div>
-          <div class="footer_info">
-            <span>NЁRDS DESIGN STUDIO</span>
-            <p>191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8</p>
-            <a href="tel:+7(812)2757575">тел. +7(812) 275-75-75</a>
-            <button type="button">Напишите нам</button>
-          </div>
-          <ul class="footer-social">
-            <li><a class="social-button" href="#"> <img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
-            <li><a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-            <li><a class="social-button" href="#"> <img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
-          </ul>
-          <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
-          <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
+   <footer>
+    <p>
+    <img src="img/2.jpg" width="1440" height="416" alt="карта">
+    </p>
+    <div>
+    <img src="img/map-marker.svg" width="231" height="190">
+  </div>
+    <div class="footer_info">
+      <span>NЁRDS DESIGN STUDIO</span>
+      <p>191186, Санкт-Петербург, <br>
+      ул. Б. Конюшенная, д. 19/8</p>
+      <a href="tel:+7(812)2757575">тел. +7(812) 275-75-75</a>
+      <button class="button" type="button">Напишите нам</button>
+    </div>
+      <ul class="footer-social">
+    <div class="social-button">
+        <li><a  href="#"> <img src="img/vk-icon.svg" width="26" height="15" alt="ВКонтакте"></a></li>
+    </div>
+    <div class="social-button"></div>
+        <li><a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук"></a></li>
+    </div>
+    <div class="social-button"></div>
+        <li><a href="#"> <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+    </div>
+      </ul>
+      <span class="footer-social_slogan">Давайте дружить, это выгодно!</span>
+      <span class="footer-social_bonus">Скидка 10% для друзей из социальных сетей</span>
         </footer>
-      <section class="modal">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>Напишите нам</p>
-          <label>
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label>
-            Ваш e-mail:>
-            <input type="text" name="e-mail" placeholder="email@example.com">
-          </label>
-            <p>Текст письма:</p>
-            <textarea name="text" rows="4"></textarea>
-            <input type="submit" value="Отправить">
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </body>
-  </html>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="text" name="e-mail" placeholder="email@example.com">
+        </label>
+          <span>Текст письма:</span>
+          <textarea name="text" rows="4"></textarea>
+          <input class="button" type="submit" value="Отправить">
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+  </section>
+</body>
+</html>
