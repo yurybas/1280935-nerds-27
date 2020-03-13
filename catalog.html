@@ -30,56 +30,72 @@
           <p class="price">Стоимость:</p>
        <div class="range">
          <div class="range-track">
-           <div class="range-pin range-pin-min"></div>
-           <div class="range-pin range-pin-max"></div>
+           <div class="range-track_fill"></div>
+           <div class="range-pin range-pin-min">
+             <img src="img/filter-button.svg">
+           </div>
+           <div class="range-pin range-pin-max">
+            <img src="img/filter-button.svg">
+           </div>
          </div>
-         <label>от
-         <input type="number" value="0" name="min">
-        </label>
-        <label>до 
-         <input type="number" value="15000" name="max">
-        </label>
+       </div>
+       <label>от
+        <input type="number" value="0" name="min">
+       </label>
+       <label>до 
+        <input type="number" value="15000" name="max">
+       </label>
+       <div class="list">
+          <p>Сортировать:</p>
+          <button class="items" type="button">по цене</button>
+          <button class="items" type="button">по типу</button>
+          <button class="items" type="button">по названию</button>
        </div>
        <div>
-          <p>Сортировать:</p>
-          <button type="button">по цене</button>
-          <button type="button">по типу</button>
-          <button type="button">по названию</button>
-       </div>
-       <form action="https://echo.htmlacademy.ru" method="get">
-         <p>Сетка:</p>
-         <label>
-           <input type="radio" name="grid" value="adaptive" checked> Адаптивная
-         </label>
-         <label>
-           <input type="radio" name="grid" value="fixed"> Фиксированная
-         </label>
-         <label>
-           <input type="radio" name="grid" value="rubber"> Резиновая
-         </label>
-         <p>Особенности:</p>
-         <label>
-          <input type="checkbox" name="slider" checked> Слайдер
-        </label>
-        <label>
-          <input type="checkbox" name="block"> Блок преимуществ
-        </label>
-        <label>
-          <input type="checkbox" name="news" checked> Новости
-        </label>
-        <label>
-          <input type="checkbox" name="gallery"> Галерея
-        </label>
-        <label>
-          <input type="checkbox" name="basket"> Корзина
-        </label>
-        <input type="submit" value="Показать">
-       </form>
+          <p class="grid">Сетка:</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" opacity="40%">
+            <path fill="#4D4D4D" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#4D4D4D" cx="12.5" cy="12.5" r="4.5"/>
+          </svg>
+          <div class="radio">Адаптивная</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" opacity="40%">
+            <path fill="#4D4D4D" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+          </svg>
+          <div class="radio"> Фиксированная</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" opacity="40%">
+            <path fill="#4D4D4D" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+          </svg>
+          <div class="radio"> Резиновая</div>
+        </div>  
+        <div class="features_list">  
+          <p class="features_list-title">Особенности:</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" opacity="40%">
+            <path fill="#4D4D4D" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#4D4D4D" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <div class="checkbox"> Слайдер</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" opacity="40%">
+            <path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          <div class="checkbox"> Блок преимуществ</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" opacity="40%">
+            <path fill="#4D4D4D" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#4D4D4D" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <div class="checkbox"> Новости</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" opacity="40%">
+            <path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          <div class="checkbox"> Галерея</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" opacity="40%">
+            <path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          <div class="checkbox"> Корзина</div>
+          <input class="grey-btn" stype="submit" value="Показать">
+        </div>
      </section>
      <section class="catalog">
        <h2 class="visually-hidden">Список шаблонов</h2>
        <ul class="catalog-list">
          <li class="catalog-item">
+           <img class="pic" src="img/browser.svg"   width="360" height="40">
            <a href="catalog-item.html">
              <img src="img/img-sedona-jpg.jpg" width="360" height="576"
              alt="Шаблон Sedona">
@@ -91,8 +107,9 @@
            </div>
          </li>
          <li class="catalog-item">
+          <img class="pic" src="img/browser.svg">
             <a href="catalog-item.html">
-              <img src="img/img-pink-jpg.jpg" width="360" height="576"
+              <img  src="img/img-pink-jpg.jpg" width="360" height="576"
               alt="Шаблон Pink">
             </a>
             <div>
@@ -102,6 +119,7 @@
             </div>
           </li>
           <li class="catalog-item">
+            <img class="pic" src="img/browser.svg">
             <a href="catalog-item.html">
               <img src="img/img-barbershop-jpg.jpg" width="360" height="576"
               alt="Шаблон барбершопа">
@@ -113,6 +131,7 @@
             </div>
           </li>
           <li class="catalog-item">
+            <img class="pic" src="img/browser.svg">
             <a href="catalog-item.html">
               <img src="img/img-mishka-jpg.jpg" width="360" height="576"
               alt="Шаблон Mishka">
@@ -124,6 +143,7 @@
             </div>
           </li>
           <li class="catalog-item">
+            <img class="pic" src="img/browser.svg">
             <a href="catalog-item.html">
               <img src="img/img-aplus-jpg.jpg" width="360" height="576"
               alt="Шаблон Aplus">
@@ -135,6 +155,7 @@
             </div>
           </li>
           <li class="catalog-item">
+            <img class="pic" src="img/browser.svg">
             <a href="catalog-item.html">
               <img src="img/img-kvast-jpg.jpg" width="360" height="576"
               alt="Шаблон Kvast">
